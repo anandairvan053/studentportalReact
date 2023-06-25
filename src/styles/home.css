@@ -1,0 +1,91 @@
+.home-container {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  text-align: left;
+  background-image: url(https://ruker-image-prod.s3.ap-southeast-1.amazonaws.com/1e8de25e-de38-4259-b10e-f9f391a49cd4.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.home-content-a {
+  position: relative;
+  max-width: 300px;
+  margin-left: auto;
+  padding: 20px;
+}
+
+.home-content-a h1 {
+  font-style: normal;
+  font-weight: normal;
+  color: white;
+  margin: 0;
+}
+
+.home-content-a h5 {
+  font-style: bold;
+  font-weight: bold;
+  text-align: left;
+  font-size: large;
+  margin: 0;
+}
+
+.home-content-b {
+  position: relative;
+  margin-right: auto;
+  border-left: 4px solid white;
+  padding: 20px;
+}
+
+.home-content-b h3 {
+  font-style: bold;
+  font-weight: bold;
+  font-size: 22px;
+  margin: 0;
+  color: white;
+}
+
+.home-content-b button {
+  margin-left: auto;
+  margin-top: 10px;
+  background-color: #444141;
+  border-radius: 4px;
+  color: #fff;
+  cursor: pointer;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  border: none;
+}
+
+.home-content-b button:hover {
+  background-image: linear-gradient(
+    90deg,
+    #53cbef 0%,
+    #dcc66c 50%,
+    #ffa3b6 75%,
+    #53cbef 100%
+  );
+  animation: slidernbw 5s linear infinite;
+  color: #000;
+}
+
+@keyframes slidernbw {
+  to {
+    background-position: 20vw;
+  }
+}
+
+@media screen and (min-width: 48em) {
+  .home-content-a h1 {
+    line-height: 1.33em;
+    font-size: 1.875rem;
+  }
+}
